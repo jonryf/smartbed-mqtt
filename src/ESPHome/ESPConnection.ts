@@ -66,6 +66,7 @@ export class ESPConnection implements IESPConnection {
     const listenerBuilder = (connection: Connection) => ({
       connection,
       listener: ({ name, address, addressType, manufacturerDataList, serviceUuidsList }: BLEAdvertisement) => {
+        logInfo(`[ESPHome] No name device: ${name} - ${address}`);
         if (seenAddresses.includes(address) || !name) return;
         seenAddresses.push(address);
 
