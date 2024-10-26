@@ -10,7 +10,7 @@ import { IESPConnection } from 'ESPHome/IESPConnection';
 import { BedPositionSensor } from './entities/BedPositionSensor';
 import { getDevices } from './options';
 import { setupLightEntities } from './setupLightsEntities';
-import { setupMassageButtons } from './setupMassageButtons';
+import { setupMovementButtons } from './setupMovementButtons';
 import { setupPresetButtons } from './setupPresetButtons';
 
 export const linak = async (mqtt: IMQTTConnection, esphome: IESPConnection) => {
@@ -80,7 +80,7 @@ export const linak = async (mqtt: IMQTTConnection, esphome: IESPConnection) => {
     logInfo('[Linak] Setting up entities for device:', name);
     setupLightEntities(mqtt, controller);
 
-    if (hasMassage) setupMassageButtons(mqtt, controller);
+    if (hasMassage) setupMovementButtons(mqtt, controller);
 
     if (!isAdvanced) continue;
     setupPresetButtons(mqtt, controller);

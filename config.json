@@ -3,7 +3,7 @@
   "version": "1.1.18",
   "slug": "smartbed-mqtt",
   "description": "A Home Assistant add-on to enable controlling smart beds.",
-  "url": "https://github.com/richardhopton/smartbed-mqtt",
+  "url": "https://github.com/jonryf/smartbed-mqtt",
   "startup": "application",
   "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
   "boot": "auto",
