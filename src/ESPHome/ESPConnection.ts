@@ -71,7 +71,8 @@ export class ESPConnection implements IESPConnection {
 
         if (nameMapper) name = nameMapper(name);
         const mac = address.toString(16).padStart(12, '0');
-
+        logInfo(`[ESPHome] Device: ${name} - ${mac}`);
+        
         let index = deviceNames.indexOf(mac);
         if (index === -1) index = deviceNames.indexOf(name.toLowerCase());
         if (index === -1) return;
