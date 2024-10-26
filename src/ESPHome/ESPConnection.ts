@@ -58,7 +58,7 @@ export class ESPConnection implements IESPConnection {
   }
 
   async getBLEDevices(deviceNames: string[], nameMapper?: (name: string) => string): Promise<IBLEDevice[]> {
-    logInfo(`[ESPHome] Searching for device(s): ${deviceNames.join(', ')}`);
+    logInfo(`[ESPHome] Searching for device(s) v2: ${deviceNames.join(', ')}`);
     deviceNames = deviceNames.map((name) => name.toLowerCase());
     const bleDevices: IBLEDevice[] = [];
     const complete = new Deferred<void>();
