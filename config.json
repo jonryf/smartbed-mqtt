@@ -1,7 +1,7 @@
 {
-  "name": "Smartbed MQTT",
+  "name": "Smartbed MQTT Linak fix",
   "version": "1.1.18",
-  "slug": "smartbed-mqtt",
+  "slug": "smartbed-mqtt-linak",
   "description": "A Home Assistant add-on to enable controlling smart beds.",
   "url": "https://github.com/jonryf/smartbed-mqtt",
   "startup": "application",
